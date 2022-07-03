@@ -1,0 +1,226 @@
+// reset css
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+} 
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: calc(1em + 0.5rem);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Heebo', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap');
+
+// Styles
+header{
+    padding: 25px 35px;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+            list-style: none;
+            margin: 0 15px;
+            font-weight: bold;
+
+            &:hover{
+                color: #FF6464;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.landing-page, .recent-posts, .featured-works{
+    padding: 40px 150px;
+
+}
+
+.landing-page{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    div{
+        width: 50%;
+
+        h1{
+            font-size: 2.3rem;
+            line-height: 1.3;
+        }
+
+        p{
+            color: #21243D;
+            font-size: .9rem;
+            padding: 30px 0;
+            font-weight: 400;
+        }
+
+        button{
+            font-size: .9rem;
+            font-weight: 700;
+            background: #FF6464;
+            color: #fff;
+            padding: 10px 15px;
+            border: 0;
+            border-radius: 2px;
+        
+            &:hover{
+                cursor: pointer;
+                background: #f74e4e;
+            }
+        }
+    }
+
+    img{
+        height: 240px;
+    }
+}
+
+.recent-posts{
+    background-color: #EDF7FA;
+
+    .section-header{
+        padding: 0 5px 15px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .title{
+            font-size: 1.1rem;
+            color: #21243D;
+        }
+
+        a{
+            color: #00A8CC;
+            text-decoration: none;
+            
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        .card{
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+            border-radius: 4px;
+            width: 47%;
+
+            h2{
+                width: 80%;
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+
+            span, p{
+                color: #21243D;
+            }
+
+            span{
+                .devider{
+                    padding: 10px;
+                }
+            }
+
+            p{
+                margin-top: 20px;
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+.featured-works{
+    .title{
+        font-size: 1.1rem;
+        color: #21243D;
+        margin-bottom: 10px;
+    }
+
+    article{
+        display: flex;
+        padding: 30px 0;
+
+        img{
+            height: 160px;
+        }
+
+        .content{
+            padding: 0 30px;
+            margin-top: 10px;
+
+           h2{
+               margin-bottom: 20px;
+           }
+
+           .date{
+               background-color: #142850;
+               color: #fff;
+               font-size: .9rem;
+               font-weight: bold;
+               padding: 0 7px;
+               border-radius: 16px;
+           }
+
+           .keyword{
+               color: #8695A4;
+               margin-left: 25px;
+           }
+
+           p{
+               margin-top: 20px;
+               font-size: .9rem;
+           }
+        }
+    }
+
+    hr{
+        height: 1px;
+        background-color: #E0E0E0;
+        border: none;
+    }
+}
+
+footer{
+    margin-top: 40px;
+    padding: 40px;
+    text-align: center;
+
+    .social-links{
+        a{
+            text-decoration: none;
+            padding: 0 15px;
+            opacity: .8;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    p{
+        font-size: .9rem;
+        margin-top: 15px;
+    }
+}
+
+
+
