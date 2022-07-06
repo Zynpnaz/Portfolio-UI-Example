@@ -510,6 +510,10 @@ footer{
             display: flex;
             flex-direction: column;
     
+            a{
+                flex-direction: column;
+            }
+            
             &:nth-of-type(2){
                 display: block;
             }
@@ -573,7 +577,11 @@ footer{
         }
     }
 
-   
+   .detail-container{
+        img{
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
